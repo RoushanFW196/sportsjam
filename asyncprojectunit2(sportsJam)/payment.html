@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAvenue:Billing shipping</title>
+    <style>
+
+.paypage{
+    width: 800px;
+    height: 700px;
+  background-color: rgb(255 ,255 ,255);
+    margin:auto;
+    border: 1px solid black;
+}
+  #img{
+      margin:10px 0px 0px 15px;
+  }
+  #billing{
+      width:550px;
+      height: 300px;
+      border:1px solid red;
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: top;
+  }
+  #billing h3{
+      color: white;
+      background-color: greenyellow;
+      padding: 5px 10px;
+      margin-top: 0px;
+  }
+  #billing label{
+      font-size: 20px;
+      
+  }
+  #billing input{
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+  }
+  #od{
+      width: 200px;
+      height: 200px;
+      border: 1px solid green;
+      display: inline-block;
+      vertical-align: top;
+  }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="paypage">
+      <div id="img">
+          <img src="https://dashboard.ccavenue.com/ImgStore/Images/302_Gatewaylogo_1505158783205.png" alt="">
+        </div>
+  <hr>
+     <div>
+         <div  id="billing">
+          <h3>Billing Information</h3>
+          <label for="">Name</label><br>
+          <input type="text" placeholder="Enter Name"id="name"><br>
+          <label for="">Email</label><br>
+        <input type="text" placeholder="Email"id="email"><br>
+        <label for="">Mobile</label><br>
+<input type="number" placeholder="mobile" id="mob"><br>
+<label for="">Country</label><br>
+ <input type="text" placeholder="Country" id="Country">
+
+         </div>
+         <div id="od"></div>
+     </div>
+
+
+
+
+     <button onclick="payment()">MAKE PAYMENT</button>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+  var total=JSON.parse(localStorage.getItem("final price"))
+  console.log(total)
+    var inf=document.createElement("h2");
+    inf.textContent="Order Details:"
+    var divs=document.createElement("div");
+    divs.textContent="Total Price:"+" "+total;
+ 
+    divs.style.fontSize="20px";
+  document.getElementById("od").append(inf,divs)
+ 
+      
+  function payment(){
+      alert("Thanks For Purchasing With Us.");
+      window.location.href="home.html"
+  }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -9,8 +9,122 @@
     <style>
         *{
             margin:0;
-            padding:0:
+            padding:0;
         }
+      
+
+
+        #navbar{
+    height: 50px;
+    background-color: black;
+}
+#navbar div{
+    margin-left: 50%;
+}
+#navbar li{
+    list-style-type: none;
+   display: inline-block;
+    color: white;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    float: right;
+    
+}
+ #navbar li i{
+     margin-right: 10px;
+ }
+  #navbar li:hover{
+      text-decoration: underline;
+  }
+
+  #uppertag{
+    width:100%;
+    height: 100px;
+ 
+}
+ #uppertag img{
+     margin-left: 10px;
+     margin-top: 20px;
+ }
+ #uppertag div{
+     display: inline;
+     justify-content:space-between;
+     margin-top: 30px!important;
+   margin-right: 5%;
+ }
+ 
+ 
+
+ #inp1{
+    height: 35px;
+ 
+    width: 45%;
+   margin-right:-5px;
+   margin-top:20px;
+   vertical-align: top;
+    border-radius: 5px 0 0 5px;
+    border-color: #898989;
+   
+    border-width: 1px 0 1px 1px;
+    border-color: #898989;
+    border-style: solid;
+    line-height: 29px;
+    font-size: 13px;
+    color:#999;
+    text-indent: 5px;
+     @media only screen and (min-width:767px)and (max-width:1024px) {
+         width:96%;
+     }
+    
+ }
+
+
+   #inp2{
+       background: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/sprite.png") no-repeat scroll -240px -1px;
+       height: 42px;
+       width:10%;
+     vertical-align: top;
+       color: #666;
+       border:none;
+       cursor: pointer;
+       margin:0;
+      margin-top: 20px;
+       padding:0;
+       font-weight: 400;
+   }
+
+   #cartdetail::before{
+       background: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/sprite.png") repeat scroll -72px  -1px ;
+       bottom:0;
+       content:" ";
+       height: 53px;
+       right: 20px;
+       margin-top:50px;
+
+    position: absolute;
+       left: auto;
+       top: 5px;
+       width: 170px;
+     
+
+   }
+
+
+
+
+
+#accessory {
+    height: 50px;
+    border:1px solid black;
+    margin-top: 15px;
+   
+}
+#accessory span{
+    font-size: 20px;
+    
+    padding:10px  15px;
+}
 .head{
     width:100%;
     height: 35px;
@@ -27,9 +141,12 @@
     width: 100%;
     background-color: rgb(224, 207, 207);
 }
-  
+  #table td{
+      border:1px solid black;
+      text-align: center;
+  }
  #table th:nth-child(1){
-     width: 60%;
+     width: 5%;
      border:1px solid #ccc;
      height: 35px;
      padding-left: 10px;
@@ -40,7 +157,7 @@
      margin:0;
  }
  #table th:nth-child(2){
-     width: 10%;
+     width: 25%;
      border:1px solid #ccc;
      height: 35px;
      padding-left: 10px;
@@ -51,7 +168,7 @@
      margin:0;
  }
  #table th:nth-child(3){
-     width: 10%px;
+     width: 10%;
      border:1px solid #ccc;
      height: 35px;
      padding-left: 10px;
@@ -83,18 +200,247 @@
      text-align: start;
      margin:0;
  }
+ #table th:nth-child(6){
+     width: 10%;
+     border:1px solid #ccc;
+     height: 35px;
+     padding-left: 10px;
+     font-weight: 400;
+     background: #eee;
+     font-size: 14px;
+     text-align: start;
+     margin:0;
+ }
+
+
+   #img{
+       width: 100px;
+      padding: 2% 10%;
+       height: 100px;
+   }
  
+
+   #pay{
+       width:100%;
+       height: 100px;
+     
+       margin-top: 500px;
+   }
+   #pay a{
+       width: 200px;
+       height: 30px;
+       background: rgba(78, 77, 77, 0.7);
+       color: rgb(102 ,102 ,102);
+       float: left;
+       text-align: center;
+       text-decoration: none;
+       font-weight: 400;
+       border: 1px solid black;
+       padding:5px 10px ;
+       margin:5px 15px;
+   }
+   #pay input{
+       float: right;
+       padding: 5px 15px;
+       background-color: darkorange;
+       color: white;
+       cursor: pointer;
+       margin-right: 30px;
+   }
+   #summary{
+       height: 200px;
+       border: 1px solidrgb(245, 236, 236);
+       background-color: rgb(221, 229, 236);
+       width: 95%;
+       margin:auto;
+   }
+   #summary h2{
+       color: #333333;
+       background-color: rgba(0,0,0,0);
+       font-size: 14px;
+       font-weight: 400;
+       display: block;
+       padding: 10px;
+       line-height: 38px;
+       font-style: normal;
+       text-decoration: none solid rgb(51,51,51);
+       border:1px solid rgb(102 ,102 ,102)
+   }
+
+   #summary td:nth-child(1){
+    width:90%;
+    text-align: right;
+    border:1px solid rgb(102 ,102 ,102) ;
+    font-weight: 400;
+    padding: 10px 10px 10px 0px;
+   }
+   #summary td:nth-child(2){
+    width:20%;
+    text-align: right;
+    border:1px solid rgb(102 ,102 ,102) ;
+    font-weight: 400;
+    padding: 10px 10px 10px 0px;
+   }
+
+
+   #sevenicon{
+      width: 100%;
+      height: 150px;
+      background-color:aqua;
+      margin-top: 100px;
+  }
+
+
+
+
+  #footerbody{
+      width:100%;
+      height: 500px;
+      background-color:#262626;
+      display: flex;
+      flex-wrap: wrap;
+    
+      gap: 10%;
+      margin: 0;
+      padding: 0px 0px 5px;
+      color:rgb(255 ,255,255);
+      font-size: 12px;
+      font-family:"open sans" ;
+      line-height: normal;
+      vertical-align: baseline;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none solid rgb(255 ,255,255);
+      text-align: left;
+  }
+
+  .ulbox{
+      padding: 20px 13px 10px;
+      margin: 10px;
+      padding: 2%;
+      color:rgb(255 ,255,255);
+      
+      font-weight: 400;
+      font-size: 12px;
+      font-family: "open sans";
+      line-height: normal;
+      vertical-align: baseline;
+      text-decoration: none solid rgb(255 ,255,255);
+      text-align: left;
+  }
  
+
+
+
+   .titleLI{
+
+       color:rgb(222 ,222,222);
+       
+       font-family:" raleway,sans-serif";
+       font-size: 14px;
+       font-weight: 600;
+       font-style: normal;
+       line-height: 17px;
+       text-decoration: none;
+       text-indent: 0px;
+       vertical-align: baseline;
+       text-align: left;
+       
+   }
+ 
+.ulbox li{
+    list-style-type: none;
+    margin-top:10px;
+    font-weight: 400;
+}
+
+.so-icon i {
+    margin: 5px;
+  
+}
+
+#lastfooterimg {
+    width: 100%;
+    height: 100px;
+    
+     float: left;
+     margin:50px;
+     
+}
+#lastfooterimg img{
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-right: 0;
+} 
+
+
 
     </style>
 </head>
 <body>
+
+    <div id="navbar">
+        <div>
+            <li><i class="fas fa-heart"></i>Wishlist</li>
+            <li id="createaccount"> <i class="fas fa-user"></i>Create Account</li>
+            <li id="signin"><i class="fas fa-sign-in-alt"></i>Sign in</li>
+   
+            <li><i class="fas fa-phone-alt"></i>Call US:+91-9555461555</li>
+        </div>
+    </div>
+
+    <div id="uppertag">
+        <div>
+         <img id="home" src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/logo.jpg" alt="">
+     </div>
+ 
+      <div id=src>
+     <input type="number" placeholder="Search" id="inp1">
+      
+     <input type="button"  id="inp2">
+      </div>
+ 
+ 
+     <div  id="cartdetail"></div>
+ 
+ 
+ 
+     </div>
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+    <div id="accessory">
+      <span>Sports</span>
+      <span>Fitness</span>
+      <span>Shoes</span>
+      <span>Clothing</span>
+      <span>Accessories</span>
+      <span>Leisure Sports</span>
+      <span>Fangear</span>
+      <span>Brands</span>
+    </div>
+
+
+
+
+
+
+
       <div class="head">
         <h2>SHOPPING CART</h2>
       </div>
     
        <table id="table">
-          
+          <th>product image</th>
            <th>Product Name</th>
            <th>Unit Price</div>
            <th>Quantity</th>
@@ -102,6 +448,96 @@
            <th>Remove</th>
        
        </table>
+
+<hr>
+
+
+       <div id="pay"></div>
+
+  <div id="summary"></div>
+
+
+
+
+
+  <div id="sevenicon">
+
+     
+</div>
+
+
+
+
+
+
+
+
+<div id="footerbody">
+  <ul class="ulbox">
+ <li class="titleLI">GET US KNOW US</li>
+ <li>ABOUT US</li>
+ <li>INQUIRY/FEEDBACK</li>
+ <li>OUR STORIES</li>
+ <li>SPORTSJAM TEAM</li>
+  </ul>
+
+  <ul class="ulbox">
+      <li class="titleLI">HERE TO HELP</li>
+      <li>REGISTER/LOGIN</li>
+      <li>DELIVERY & CHARGES</li>
+      <li> PAYMENT OPTIONS</li>
+      <li>FAQ'S</li>
+      <li>RETURNS POLICY</li>
+      <li>TRACK MY ORDER</li>
+      <li>BUY IN BULK</li>
+  </ul>
+ 
+  
+  <ul class="ulbox">
+<li class="titleLI">PAYMENTS</li>
+<li>
+  <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Payments.png" alt="">
+</li>
+  </ul>
+  
+
+  <ul class="ulbox">
+     <li class="titleLI">SIGN UP FOR NEWSLETTER</li>
+  
+
+
+
+  <ul class="ulbox">
+      <li class="titleLI">CONNECT WITH US</li>
+      <li class="so-icon">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube-square"></i>
+      </li>
+      <li>
+          <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/ssl.png" alt="">
+      </li>
+  </ul>
+</ul>
+
+
+<div id="lastfooterimg">
+ <span>COPYRIGHT</span>
+ <span >
+ <img src="https://www.capillarytech.com/img/CapillaryTech.svg">
+</span>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
 
 
 
@@ -116,15 +552,113 @@
 
 
        <script>
+      
+        var shoe_cart=JSON.parse(localStorage.getItem("shoecart"))
 
+  console.log(shoe_cart)
+     
+       var total=0;
+     var tr=document.createElement("tr")
 
+    shoe_cart.forEach(element => {
+        var tr=document.createElement("tr")
 
+        var name=element.name;
+        var td2=document.createElement("td");
+        td2.textContent=name;
+        var image=element.image;
+         var td1=document.createElement("img");
+          td1.src=image;
+          td1.style.border="1px solid black";
+          td1.setAttribute("id","img")
+        var price=element.price;
+        var td3=document.createElement("td");
+        td3.textContent=price;
+        var Quantity=element.Quantity;
+        var td4=document.createElement("td");
+         td4.textContent=Quantity;
+        var discount=element.discount;
+        var unitprice=td3.textContent*td4.textContent;
+        console.log(unitprice)
+        var td5=document.createElement("td");
+        td5.textContent= unitprice;
+         
+       total=total+Number(unitprice);
 
+          var td6=document.createElement("td");
+          td6.textContent="x";
+           td6.style.color="red"
+           td6.style.fontSize="30px";
+           
+           td6.onclick= function(){
+               removed(element);
+           };
 
+           tr.append(td1,td2,td3,td4,td5,td6);
+           document.getElementById("table").appendChild(tr)
+    });
+    
+       function removed(element){
+           element.remove();
+       }
+  
+         
+     var a=  document.createElement("a")
+  a.href="home.html";
+    a.textContent="CONTINUE SHOPPING"
+     a.style.background="rgba(0,0,0,0";
+     a.style.color="rgb(102 ,102 ,102";
 
+     document.getElementById("pay").appendChild(a);
 
+       var paybtn=document.createElement("input")
+       paybtn.type="submit";
+      paybtn.onclick=payment;
+        paybtn.value="PROCEED TO PAY";
+        document.getElementById("pay").append(a,paybtn);
 
+  function payment(){
+      window.location.href="payment.html"
+  }
 
+      console.log(total)
+      var sumry=document.createElement("h2");
+       sumry.textContent="Order Summary"
+         
+        var tr1=document.createElement("tr");
+        var td1=document.createElement("td");
+         td1.textContent="Cart Sub Total:"
+var td2=document.createElement("td");
+   td2.textContent=total;
+     tr1.append(td1,td2)
+
+     var tr2=document.createElement("tr");
+      var td1=document.createElement("td");
+       td1.textContent="GST 18%";
+       var td2=document.createElement("td");
+        
+       var amount_gst= total*0.18;
+
+      console.log(amount_gst)
+      td2.textContent=amount_gst;
+
+      tr2.append(td1,td2);
+      
+      var tr3=document.createElement("tr");
+      var td1=document.createElement("td");
+      td1.textContent="Total Cart Amount:"
+      var td2=document.createElement("td");;
+      
+      var amount_after_gst=total+amount_gst;
+      td2.textContent=amount_after_gst;
+
+      tr3.append(td1 ,td2)
+
+      document.getElementById('summary').append(sumry ,tr1,tr2,tr3)
+
+     
+        var total_cart_price=amount_after_gst;
+        localStorage.setItem("final price",JSON.stringify(total_cart_price))
 
 
 

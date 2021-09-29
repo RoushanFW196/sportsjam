@@ -7,7 +7,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      
+   *{
+       margin: 0;
+       padding: 0;
+   }
+
+
+  
+#navbar{
+    height: 50px;
+    background-color: black;
+}
+#navbar div{
+    margin-left: 50%;
+}
+#navbar li{
+    list-style-type: none;
+   display: inline-block;
+    color: white;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    float: right;
+    
+}
+ #navbar li i{
+     margin-right: 10px;
+ }
+  #navbar li:hover{
+      text-decoration: underline;
+  }
+
+  #uppertag{
+    width:100%;
+    height: 100px;
+ 
+}
+ #uppertag img{
+     margin-left: 10px;
+     margin-top: 20px;
+ }
+ #uppertag div{
+     display: inline;
+     justify-content:space-between;
+     margin-top: 30px!important;
+   margin-right: 5%;
+ }
+ 
+ 
+
+ #inp1{
+    height: 35px;
+ 
+    width: 45%;
+   margin-right:-5px;
+   margin-top:20px;
+   vertical-align: top;
+    border-radius: 5px 0 0 5px;
+    border-color: #898989;
+   
+    border-width: 1px 0 1px 1px;
+    border-color: #898989;
+    border-style: solid;
+    line-height: 29px;
+    font-size: 13px;
+    color:#999;
+    text-indent: 5px;
+     @media only screen and (min-width:767px)and (max-width:1024px) {
+         width:96%;
+     }
+    
+ }
+
+
+   #inp2{
+       background: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/sprite.png") no-repeat scroll -240px -1px;
+       height: 42px;
+       width:10%;
+     vertical-align: top;
+       color: #666;
+       border:none;
+       cursor: pointer;
+       margin:0;
+      margin-top: 20px;
+       padding:0;
+       font-weight: 400;
+   }
+
+   #cartdetail::before{
+       background: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/sprite.png") repeat scroll -72px  -1px ;
+       bottom:0;
+       content:" ";
+       height: 53px;
+       right: 20px;
+       margin-top:50px;
+
+    position: absolute;
+       left: auto;
+       top: 5px;
+       width: 170px;
+     
+
+   }
+
+
+
+
+
+#accessory {
+    height: 50px;
+    border:1px solid black;
+    margin-top: 15px;
+   
+}
+#accessory span{
+    font-size: 20px;
+    
+    padding:10px  15px;
+}
+#bar{
+   color:#000000;
+   text-decoration-line: none;
+   padding-right: 14px;
+   margin-right: 6px;
+   font-size: 12px;
+   line-height: 30px;
+   height: 30px;
+   background-color: palegreen;
+}
+
+#bar a{
+    color:#666666;
+    
+    font-size: 12px;
+    line-height: 30px;
+    margin:0px 6px 0px 10px;
+    padding:0px 14px 0px 10px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline solid rgb(102 ,102 ,102);
+}
+
+  .filter{
+      width:100%;
+       text-align: center;
+      height: 50px;
+      background-color: aquamarine;
+  }
+
+ .sel{
+     float: right;
+     margin-right: 20px;
+     height: 20px;
+   
+ }
+
 #shoescontainer{
     
     width:92%;
@@ -110,12 +264,167 @@
 
 
 }
+#footerbody{
+      width:100%;
+      height: 500px;
+      background-color:#262626;
+      display: flex;
+      flex-wrap: wrap;
+    
+      gap: 10%;
+      margin: 0;
+      padding: 0px 0px 5px;
+      color:rgb(255 ,255,255);
+      font-size: 12px;
+      font-family:"open sans" ;
+      line-height: normal;
+      vertical-align: baseline;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none solid rgb(255 ,255,255);
+      text-align: left;
+  }
+
+  .ulbox{
+      padding: 20px 13px 10px;
+      margin: 10px;
+      padding: 2%;
+      color:rgb(255 ,255,255);
+      
+      font-weight: 400;
+      font-size: 12px;
+      font-family: "open sans";
+      line-height: normal;
+      vertical-align: baseline;
+      text-decoration: none solid rgb(255 ,255,255);
+      text-align: left;
+  }
+ 
+
+
+
+   .titleLI{
+
+       color:rgb(222 ,222,222);
+       
+       font-family:" raleway,sans-serif";
+       font-size: 14px;
+       font-weight: 600;
+       font-style: normal;
+       line-height: 17px;
+       text-decoration: none;
+       text-indent: 0px;
+       vertical-align: baseline;
+       text-align: left;
+       
+   }
+ 
+.ulbox li{
+    list-style-type: none;
+    margin-top:10px;
+    font-weight: 400;
+}
+
+.so-icon i {
+    margin: 5px;
+  
+}
+
+#lastfooterimg {
+    width: 100%;
+    height: 100px;
+    
+     float: left;
+     margin:50px;
+     
+}
+#lastfooterimg img{
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-right: 0;
+}
 
     </style>
 </head>
 <body>
     
+
+    <div id="navbar">
+        <div>
+            <li><i class="fas fa-heart"></i>Wishlist</li>
+            <li> <i class="fas fa-user"></i>Create Account</li>
+            <li><i class="fas fa-sign-in-alt"></i>Sign in</li>
+   
+            <li><i class="fas fa-phone-alt"></i>Call US:+91-9555461555</li>
+        </div>
+    </div>
+
+    <div id="uppertag">
+        <div>
+         <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/logo.jpg" alt="">
+     </div>
+ 
+      <div id=src>
+     <input type="number" placeholder="Search" id="inp1">
+      
+     <input type="button"  id="inp2">
+      </div>
+ 
+ 
+     <div  id="cartdetail"></div>
+ 
+ 
+ 
+     </div>
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+    <div id="accessory">
+      <span>Sports</span>
+      <span>Fitness</span>
+      <span>Shoes</span>
+      <span>Clothing</span>
+      <span>Accessories</span>
+      <span>Leisure Sports</span>
+      <span>Fangear</span>
+      <span>Brands</span>
+    </div>
+    <div id="bar">
+        <a href="#"><span>Home></span></a>
+        <a href="#"><span>Buy></span></a>
+         <a href="#"><span>SPORTS></span></a>
+         <a href="#"><span>BADMINTON></span></a>
+         <a href="#"><span>BADMINTON SHOES></span></a>
+    </div>
+
+    
+    <div class="filter">
+         <h2>found 9 product(s) in 6 Brand(S)</h2>
+           
+         <select plaaceholder="select" class="sel" >
+              <option>select</option>
+               <option><button onclick="sortLH()">Price low to high</button></option>
+             <option onclick="sortHL()">Price High to low</option>
+             <option onclick="sortDS()">Discount</option>
+             <option  onclick="sortP()">popularity</option>
+         </select>
+
+
+
+    </div>
+
     <div id="shoescontainer"></div>
+
+    
 
         
      <div class="p">ALL PRODUCTS LISTED</div>
@@ -130,6 +439,73 @@
        <p class="ptext">Our <strong> Online Squash Shoes Store India </strong> lists best brands like <strong> ASICS </strong>Squash Shoes, <strong> PRINCE </strong> Squash Shoes, <strong> HEAD</strong> Court Shoes.The shoes are Non-marking and can be used on court surfaces for Badminton and Squash.Compare your favourite squash shoes,Refer Shoe Size Guide and buy online at good prices,for quick & Free shipping in India.</p>
 
 
+
+       <div id="footerbody">
+        <ul class="ulbox">
+       <li class="titleLI">GET US KNOW US</li>
+       <li>ABOUT US</li>
+       <li>INQUIRY/FEEDBACK</li>
+       <li>OUR STORIES</li>
+       <li>SPORTSJAM TEAM</li>
+        </ul>
+  
+        <ul class="ulbox">
+            <li class="titleLI">HERE TO HELP</li>
+            <li>REGISTER/LOGIN</li>
+            <li>DELIVERY & CHARGES</li>
+            <li> PAYMENT OPTIONS</li>
+            <li>FAQ'S</li>
+            <li>RETURNS POLICY</li>
+            <li>TRACK MY ORDER</li>
+            <li>BUY IN BULK</li>
+        </ul>
+       
+        
+        <ul class="ulbox">
+    <li class="titleLI">PAYMENTS</li>
+    <li>
+        <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Payments.png" alt="">
+    </li>
+        </ul>
+        
+      
+        <ul class="ulbox">
+           <li class="titleLI">SIGN UP FOR NEWSLETTER</li>
+        
+  
+  
+  
+        <ul class="ulbox">
+            <li class="titleLI">CONNECT WITH US</li>
+            <li class="so-icon">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube-square"></i>
+            </li>
+            <li>
+                <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/ssl.png" alt="">
+            </li>
+        </ul>
+  </ul>
+  
+  
+   <div id="lastfooterimg">
+       <span>COPYRIGHT</span>
+       <span >
+       <img src="https://www.capillarytech.com/img/CapillaryTech.svg">
+      </span>
+   </div>
+  
+  
+  
+  
+      </div>
+  
+  
+  
+  
+  
 
 
 
@@ -289,7 +665,12 @@ dis.setAttribute("class","ptext")
 
  show_shoes_onwebpage(shoes);
 
-
+      var productshoe= localStorage.setItem("shoes" ,JSON.stringify(shoes))
+      
+         
+      function sortLH(){
+          console.log("hello")
+      }
 
 
 
