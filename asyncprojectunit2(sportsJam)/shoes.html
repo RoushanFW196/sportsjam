@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+#shoescontainer{
+    
+    width:92%;
+    margin-left: 8%;
+    border: 2px solid red;
+    
+    display: grid;
+    gap:2%;
+
+    grid-template-columns: repeat(3,30%);
+    
+}
+
+#shoescontainer div{
+
+    cursor: pointer;
+}
+#shoescontainer>div:hover{
+    border: 1px solid black;
+    
+}
+.ptext{
+    display: inline-block;
+    margin:5%;
+    font-size: 14px;
+    line-height: 12px;
+    vertical-align: baseline;
+    color:rgb(0,0,0);
+    font-weight: 400;
+    font-family: "open sans";
+
+}
+
+
+
+.image1{
+    width:5%;
+    height: 5%;
+    margin-left: 95%;
+    margin-top: 1%;
+}
+.image2{
+    width:100%;
+    height: 50%;
+}
+
+.image3{
+    margin-left: 70%;
+    padding: 2%;
+}
+
+.p{
+    font-size: 12px;
+    color: #666666;
+    background-color: rgba(0 ,0 ,0 ,0);
+    font-family: open sans;
+    line-height: 33px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid black;
+    text-align: center;
+    margin:5% 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+#i{
+    margin:1% 10%;
+    align-items: center;
+}
+.htext{
+    color:rgb(0,0,0);
+    background-color: rgb(202,202,202);
+    font-size: 15px;
+    font-family: "open sans";
+    line-height: 30px;
+    vertical-align: baseline;
+    padding-left:10px ;
+    font-weight: 300;
+    font-style: normal;
+    margin:1% 10%;
+    
+}
+
+.ptext{
+    color:rgb(0,0,0);
+    
+    font-size: 15px;
+    font-family: "open sans";
+    line-height: 30px;
+    vertical-align: baseline;
+    padding-left:10px ;
+    font-weight: 300;
+    font-style: normal;
+    margin:1% 10%;
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="shoescontainer"></div>
+
+        
+     <div class="p">ALL PRODUCTS LISTED</div>
+
+     <div id="i">
+         <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/SquashLogos.jpg" alt="">
+     </div>
+
+     <h2 class="htext">BUY SQUASH SHOES ONLINE IN INDIA@ SPORTSJAM.IN</h2>
+
+
+       <p class="ptext">Our <strong> Online Squash Shoes Store India </strong> lists best brands like <strong> ASICS </strong>Squash Shoes, <strong> PRINCE </strong> Squash Shoes, <strong> HEAD</strong> Court Shoes.The shoes are Non-marking and can be used on court surfaces for Badminton and Squash.Compare your favourite squash shoes,Refer Shoe Size Guide and buy online at good prices,for quick & Free shipping in India.</p>
+
+
+
+
+
+    <script>
+let shoes=[
+
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Babolat Shadow Team Mens Indoor Court Shoes(Black/Blue)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/BB30F21052033.jpg",
+    discount:"20% OFF",
+    actual_price: "4,699",
+    real_price:"3,749",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+,
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Babolat Shadow Spirit Mens Indoor Court Shoes(Dark Blue)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/BB30F21034060.jpg",
+    actual_price:"5799",
+    real_price:"4649",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+,
+
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Babolat Shadow Spirit Womens Indoor Court Shoes(white/Li...)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/BB31F21041068.jpg",
+    actual_price:"5799",
+    real_price:"4649",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+,
+
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Babolat Shadow Team Womens Indoor Court Shoes(Black/Pink)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/BB31F21062035.jpg",
+    actual_price:"4699",
+    real_price:"3749",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+,
+
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Asics Court Break Indoor Shoes (White/Black)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1071A003100.jpg",
+    actual_price:"3999",
+    real_price:"3199",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+,
+{
+
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Asics Court Control FF Indoor Court Shoes (Mako Blue/pure..)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1071A021403.jpg",
+    actual_price:"9999",
+    real_price:"6999",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+
+,
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Asics Court Break 2 Indoor Court Shoes(white/peacoat)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1073A013100.jpg",
+    actual_price:"4499",
+    real_price:"3599",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+
+,
+
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Asics Gel Upcourt 4 GS Indoor Court Shoes (white/Black)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1074A027100.jpg",
+    actual_price:"3499",
+    real_price:"2799",
+    discount:"20% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+
+,
+
+{
+    wishlist:"https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    name:"Asics Gel Upcourt 4 Indoor Court Shoes (white/Peacoat)",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ASQ1071A053100.jpg",
+    actual_price:"3999",
+    real_price:"3399",
+    discount:" 15% OFF",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+}
+
+]
+
+
+console.log(shoes)
+
+ function show_shoes_onwebpage(d){
+
+    d.forEach(element => {
+        
+        console.log(element.actual_price)
+
+        let eachshoe_div=document.createElement("div");
+        let shoe_name=document.createElement("h4");
+        shoe_name.textContent=element.name;
+        let  wish_icon=document.createElement("img");
+        wish_icon.src=element.wishlist;
+     wish_icon.setAttribute("class","image1")
+
+        let rating_icon=document.createElement("img");
+        rating_icon.src=element.rating;
+         rating_icon.setAttribute("class","image3")
+
+        let dis=document.createElement("p");
+        dis.textContent=element.discount;
+dis.setAttribute("class","ptext")
+        let actual_price=document.createElement("p");
+        actual_price.textContent=element.actual_price;
+       actual_price.setAttribute("class" ,"ptext")
+        actual_price.style.textDecoration="line-through"
+        let real_price=document.createElement("p");
+        real_price.setAttribute("class" ,"ptext")
+        real_price.textContent=element.real_price;
+        let shoe_image=document.createElement("img");
+        shoe_image.src=element.image;
+       shoe_image.setAttribute("class" ,"image2")
+
+
+
+
+        eachshoe_div.append(wish_icon, shoe_image  ,shoe_name ,actual_price,real_price , dis,rating_icon)
+
+    
+        shoescontainer.append(eachshoe_div)
+
+
+
+
+    });
+   // shoescontainer.append(eachshoe_div)
+ }
+
+
+ show_shoes_onwebpage(shoes);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

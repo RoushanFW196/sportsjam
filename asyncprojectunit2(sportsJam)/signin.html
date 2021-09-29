@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+    <style>
+        .modal{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(255 ,255 ,255);
+            color: rgb(127 ,127 ,127);
+            font-size: 18px;
+            font-weight: 400;
+            border: 2px solid gray;
+            align-items: center;
+            justify-content: center;
+            margin: 100px 500px;
+            padding: 10px;
+            
+            
+        }
+        .content input{
+height: 35px;
+border-radius: 5px;
+            width: 80%;
+            background-color: rgb(255 ,255 ,255);
+            color: rgb(153,153,153);
+            font-size: 15px;
+            line-height: normal;
+            vertical-align: baseline;
+            font-family: open sans;
+            margin:10px 0px 10px 10px;
+            padding: 0px 0px 0px 2px;
+            font-weight: 400;
+            font-style: normal;
+            border:1px solid #d9d8d8;
+            text-decoration: none solid rgb(153 ,153 ,153);
+        }
+        .content input:hover{
+            border:1px solid black;
+        }
+        .content label{
+            color: rgb(102 ,102 ,102);
+            background-color: rgba(0 ,0 ,0 ,0);
+            font-size: 15px;
+            line-height: 40px;
+            padding: 8px 0px;
+            
+        }
+        .modalcontent div{
+            text-align: center;
+            font-size: 18px;
+            line-height: 39px;
+            color: #333333;
+            font-weight: 400;
+            text-decoration: none solid rgb(51 ,51 ,51);
+            
+            
+        }
+        #close{
+              font-size: 18px;
+              display: block;
+              margin-top:0;
+              
+              margin-left:320px;
+            
+              width: 70px;
+              height: 22px;
+              cursor: pointer;
+              color: #fff;
+              font-weight: 700;
+              background:url("https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/container2/productdetails/rt_loginpopup/rt_close.jpg") ;
+        }
+
+        .forget-password{
+            text-decoration: underline;
+            justify-content: space-between;
+            margin:10px;
+            
+        }
+   .forget-password span{
+       
+       display: flex;
+       gap: 180px;
+       color: rgb(51 ,51 ,51);
+       background-color: rgba(0 ,0 ,0 ,0);
+       font-size: 13px;
+       font-weight: 400;
+       margin:0;
+       padding: 0;
+   }
+
+   #log{
+       
+       height: 35px;
+       font-size: 20px;
+       height: 25px;
+       color: #fff;
+       cursor: pointer;
+       font-weight: 400;
+       border-radius: 4px;
+       padding: 10px 10px;
+       background-color: orange;
+       text-align: center;
+       margin: auto;
+       margin: 2%;
+   }
+
+   .signfb{
+       background: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/facebook_icon1.png");
+       width: 170px;
+       height: 36px;
+    float: left;
+       left:10px;
+       cursor: pointer;
+       box-sizing: border-box;
+     
+     margin:10px  10px 0px 10px;
+
+   }
+
+   .signg{
+
+    background: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/gpuls-iocn.png");
+    color:#333;
+    
+    float: left;
+    gap:10px;
+    width: 170px;
+    margin:10px 0px 0px 20px;
+    height: 36px;
+   }
+
+    </style>
+</head>
+<body>
+    
+    <div class="modal">
+
+        <div class="modalcontent">
+            <div>SIGN IN</div>
+            <div id="close"></div>
+        </div>
+
+        <div class="content">
+            <div>
+                <label for="">E-mail id</label>
+                <input type="text" name="" id="email">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="" id="password">
+            </div>
+        </div>
+
+        <div class="forget-password">
+            <span>New User?Register</a>
+            <span>Forgot Password</a>
+        </div>
+
+        <div " id="log">LOGIN</div>
+
+        <div>
+            
+    
+            <div class="signfb"></div>
+            <div class="signg"></div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+           
+       var usrdata=  JSON.parse(localStorage.getItem("user"))
+     // console.log(usrdata)
+  
+   document.getElementById("log").addEventListener("click",function(){
+     //  console.log("hellow");
+       var email=document.getElementById("email").value;
+       var password=document.getElementById("password").value;
+      // console.log(email ,password);
+
+         
+     
+      var count=0;
+      usrdata.forEach(element => {
+          
+        if(email==element.email && password==element.password){
+    count++;
+        }
+
+
+
+      });
+   if(count>0){
+       alert("Login Successful")
+   }
+  else{
+      alert("Invalid Credential")
+  }
+
+
+
+   });
+
+  
+    
+
+
+
+ 
+ 
+ 
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

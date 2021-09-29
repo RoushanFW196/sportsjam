@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton</title>
+    <style>
+        #product{
+            display: flex;
+            gap:100px;
+        }
+    #filter{
+        width: 20%;
+        height: 1000px;
+        background-color:pink ;
+    }
+
+    #sport_products{
+        width: 70%;
+        height: 1000px;
+        background-color:orange;
+        display: grid;
+        grid-template-columns: repeat(3 ,30%);
+        gap:3%;
+        margin:2%;
+    }
+
+    #itemdiv {
+        background-color: palegreen;
+        font-size: 10px;
+    }
+    #img1{
+
+        width:100%;
+        height: 50%;
+        margin-top: 10%;
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="product">
+        <div id="filter"> </div>
+        <div id="sport_products">
+           
+        </div>
+        
+    </div>
+
+
+
+    <script>
+
+ let sportproduct=[
+
+ {
+     name:"YONEX MAVIS 370 Badminton Shuttlecock",
+     image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/M3703.jpg",
+     actual_price:"10900",
+     real_price:"8499",
+     discount:"22% Off",
+     rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+,
+{
+    name:"Head Glider 505 Yellow Badminton Shuttlecock",
+    image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/HDBDSCGL505-1.jpg",
+    actual_price:"850",
+    real_price:"649",
+    discount:"24% Off",
+    rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+ ,
+
+ {
+     name:"Wilson Championship Nylon Badminton",
+     image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/WLBDSCLBN-3L.jpg",
+     actual_price:"2235",
+     real_price:"1399",
+     discount:"37% off",
+     rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+ ,
+
+   {
+       name:"Yonex Astrox Lite Badminton Racket",
+       image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YXBRAXLT21I.jpg",
+       actual_price:"2790",
+       real_price:"2099",
+       discount:"25% off",
+       rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+   ,
+
+   {
+       name:"Babolat x Feel Origin Essential Badminton",
+       image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/BBBR174346.jpg",
+       actual_price:"8999",
+       real_price:"5799",
+       discount:"35% off",
+       rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+   ,
+
+
+   {
+       name:"Yonex Astrox 88D Badminton Racket",
+      image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YNBRAX88DRDBKWHL.jpg",
+      actual_price:"17999",
+      real_price:"12499",
+      discount:"30% off",
+      rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+   ,
+
+   {
+       name:"Nike Dominate 8P Basketball(size7,Blue/White)",
+       image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NKBB0635-492.jpg",
+       actual_price:"1295",
+       real_price:"1295",
+       discount:"0% off",
+       rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+    ,
+
+    {
+        name:"Spalding james Harden(Red/Light)",
+        image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/SPBB83347Z.jpg",
+        actual_price:"1549",
+        real_price:"1249",
+        discount:"19% off",
+        rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+    ,
+
+    {
+        name:"Yonex Mens Round Neck T-shirt(1699,Rumba Red)",
+        image:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YNTS1699RURD.JPG",
+        actual_price:"890",
+        real_price:"799",
+        discount:"10% off",
+        rating:"https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png",
+ }
+    
+
+
+
+
+
+
+ ]
+
+ console.log(sportproduct)
+   
+   function showbadminton(){
+
+    sportproduct.forEach(function(el){
+
+        var  sportdiv=document.createElement('div');
+      sportdiv.setAttribute("id" ,"itemdiv")
+
+
+        var name=document.createElement('p')
+       name.textContent= el.name;
+       var actual_price=document.createElement("p");
+       actual_price.textContent=el.actual_price;
+       var real_price=document.createElement("p");
+       real_price.textContent=el.real_price;
+
+       var image=document.createElement("img");
+       image.setAttribute("id" ,"img1")
+       image.src=el.image;
+       var rating=document.createElement("img");
+       rating.src=el.rating;
+
+       var dis =document.createElement("p");
+       dis.textContent=el.discount;
+
+       sportdiv.append(image, name, actual_price, real_price, rating,image,dis)
+
+
+       console.log(el.actual_price)
+       sport_products.append(sportdiv);
+
+    })
+  //  sport_products.append(sportdiv);
+
+   }
+
+   
+  showbadminton();
+     
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

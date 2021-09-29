@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+  .headtext{
+    
+      width: 100%;
+      color: #f49500;
+      display: inline-block;
+  }
+   .headtext span{
+    margin-left: 30%;
+       font-size: 22px;
+       line-height: 33px;
+       font-weight: 400;
+       width: 30%;
+       
+    
+         
+
+    
+   }
+        .line{
+            width: 97%;
+            border-bottom:2px solid #f49500 ;
+            margin: 10px auto;
+        }
+        #invitetext{
+            width:600px;
+            height: 200px;
+            border: 2px solid blue;
+            display: inline-block;
+            vertical-align: top;
+            margin:20px 50px;
+            font-size: 14px;
+            background-color: rgba(0,0,0,0);
+            color: rgb(0,0,0);
+            line-height: 24px;
+            font-weight: 400;
+            padding: 2px 0px 5px;
+            font-style: normal;
+        }
+        #usrinfo{
+            width: 650px;
+            height: 350px;
+            border: 2px solid red;
+            display: inline-block;
+            vertical-align: top;
+            margin:20px 60px;
+        }
+        #mob1{
+            width:50px;
+            margin-left: 100px;
+            border-radius: 5px;
+     height: 32px;
+     font-size: 13px;
+     font-weight: 400;
+     padding-top: 4px;
+     border:1px solid #ccc;
+     background-color: #fff;
+     color: #000;
+     font-family: open sans!important;
+        }
+       
+        #mob2{
+            width: 300px;
+            border-radius: 5px;
+     height: 32px;
+     font-size: 13px;
+     font-weight: 400;
+     padding-top: 4px;
+     border:1px solid #ccc;
+     background-color: #fff;
+     color: #000;
+     font-family: open sans!important;
+        }
+       
+        .info{
+            font-size: 18px;
+            font-family: "open sans";
+            color:rgb(1021 ,102 ,102);
+            background-color: rgba(0,0,0,0);
+            line-height: 20px;
+            vertical-align: baseline;
+            font-weight: 400;
+            text-decoration: none solid rgb(102 ,102 ,102);
+        }
+
+        .star{
+            color:rgb(255 ,0 ,0) ;
+            font-size: 16px;
+        }
+.info td{
+      color: rgb(51 ,51 ,51);
+      
+}
+
+ .info input{
+     width:360px;
+     margin-left: 100px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     border-radius: 5px;
+     height: 32px;
+     font-size: 13px;
+     font-weight: 400;
+     padding-top: 4px;
+     border:1px solid #ccc;
+     background-color: #fff;
+     color: #000;
+     font-family: open sans!important;
+ }
+    
+   .sub{
+       width: 420px;
+       margin-left: 250px;
+       margin-top: 10px;
+       
+   }
+
+   .sub p{
+       font-size: 13px;
+       margin: 0;
+       padding: 0;
+   }
+    .sub button{
+        background-color: #f49500;
+        color: #fff;
+        
+        font-size: 14px;
+        text-transform: capitalize;
+        align-items: center;
+        width: 351px;
+        height: 35px;
+        border-radius: 5px;
+        font-weight: 600;
+        
+    }
+    </style>
+</head>
+<body>
+    <hr>
+
+    <div class="headtext">
+        <span>NEW USER</span>
+        <span>REGISTRATION</span>
+    </div>
+    
+    
+    <div class="line"></div>
+
+    <div id="invitetext">
+        <p>At Sportsjam.in ,buy your favourite brand and sportsgear at greater prices.Don't forget to use our welcome gift vouchers (worth Rs:2000)* for more savings!</p>
+        <p>Register online and enjoy the following benefits:</p>
+        <li>Get Discount Vouchers,Special Promotions &offers</li>
+        <li>Checkout faster while making your purchases</li>
+        <li>view your Order History and track your Order Status</li>
+        <li>Make Changes  to your account information or password </li>
+    </div>
+
+
+
+
+    <div id="usrinfo">
+
+    <table>
+        <tbody>
+
+<tr class="info">
+    <td>First Name<span class="star">*</span></td>
+      <td></td>
+    <td colspan="2">
+        <input type="text" name="" id="name">
+    </td>
+</tr>
+
+<tr>
+    <td>Mobile No<span class="star">*</span></td>
+    <td></td>
+    
+    <td>
+        <input type="number" placeholder="91" id="mob1">
+    </td>
+    <td>
+        <input type="number" name="" id="mob2">
+    </td>
+</tr>
+<tr class="info">
+    <td>Email<span class="star">*</span></td>
+    
+    <td></td>
+    
+    <td colspan="2">
+        <input type="text"  id="email">
+    </td>
+</tr>
+
+<tr class="info">
+    <td>Password<span class="star">*</span></td>
+    
+    <td></td>
+    <td colspan="2"><input type="password"  id="password"></td>
+    
+</tr>
+<tr class="info">
+    <td>Confirm Password<span class="star">*</span></td>
+    <td></td>
+    <td colspan="2">
+        <input type="password" name="" id="cpassword">
+    </td>
+    
+</tr>
+        </tbody>
+    </table>
+     
+    <div class="sub">
+        <button onclick="adduser()">Submit</button>
+        <p >By clicking "Register"button,you confirm that you accept our<mark style="color: blue;"> terms and<br>conditions<mark</p>
+    </div>
+        
+  </div>
+
+    <hr>
+
+
+
+
+
+    <script>
+
+    function adduser(){
+        console.log("hellow")
+        var name=document.getElementById("name").value;
+        console.log(name);
+        var mobile = document.getElementById("mob2").value;
+        var email=document.getElementById("email").value;
+       
+
+        console.log(email);
+        
+        var password=document.getElementById("password").value;
+        console.log(password);
+        var cpassword=document.getElementById("cpassword").value;
+        console.log(cpassword);
+
+
+        var usr={
+            name,
+            email,
+            mobile,
+            password,
+            cpassword
+
+        }
+
+        if(name==""|| mobile==""||email==""|| password==""||cpassword=="" ){
+            alert("Invalid entry")
+        }
+
+        if(password !==cpassword){
+            alert("please confirm password")
+        }
+   
+        if(localStorage.getItem("user")==null){
+            localStorage.setItem("user" ,JSON.stringify([]))
+        }
+
+        var arr=JSON.parse(localStorage.getItem("user"));
+        arr.push(usr);
+    localStorage.setItem("user",JSON.stringify(arr))
+
+
+ console.log(usr)
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
