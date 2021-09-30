@@ -361,58 +361,180 @@
  #detail{
      width:60%;
      height: 500px;
-     border:2px solid red;
+   
      vertical-align: top;
      display: inline-block;
     margin-right: 2%;
  }
 
- #may_also_like{
-     width:35%;
-     height: 500px;
-     border:2px solid brown;
-     vertical-align: top;
-     display: inline-block;
-    
 
- }
 #des{
     border:1px solid#ccc;
     width:95%;
     height: 250px;
     margin-top: 10px;
 }
-
-#des>span:nth-child(1){
-    width: 100px;
-    color: darkorange;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: "open sans";
-    line-height: 16px;
-    margin:5px 10px 5px 5px;
-}
-
-#des>span:nth-child(2){
-    width: 150px;
-    height: 23px;
-    color: #000;
-    border:1px solid gray;
-    background:rgba(214, 205, 205, 0.979) ;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: "open sans";
-    padding:6px 6px 3px 3px;
-    cursor: pointer;
-    margin:10px 10px 5px 5px;
-}
-
-  #des  label{
-      height: 35px;
-      background-color:green;
-
+ #des span{
+     margin-left: 15px;
+     margin-top: 10px;
+     font-size: 13px;
+ }
+ #des span:nth-child(1){
     
+       color: rgb(255,87,43);
+       padding: 6px 10px 5px;
+       font-size: 13px;
+       
+   }
+
+   #des span:nth-child(2){
+       background-color:gray;
+       color: rgb(0,0,0);
+       padding: 6px 10px 5px;
+       font-size: 13px;
+       border:1px solid gray;
+   }
+    #des tr{
+        height: 50px;
+        border-bottom: 3px solid #ccc;
+        background-color: #fff;
+        display: table-row;
+    }
+
+     .td1{
+        width: 24%;
+        padding: 6px 2px 4px 4px;
+        vertical-align: top;
+        border-right:none ;
+        border-top: 1px solid #ccc;
+        font-family: open sans;
+        margin:5px;
+        color: #666;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    #td2{
+        width: 68%;
+        padding: 6px 0 4px 3px;
+        vertical-align: top;
+        border-top: 1px solid #ccc;
+        font-family: open sans;
+        margin-left:10px;
+        border-spacing: 2px;
+        color: #666;
+        text-align: left;
+        background-color: #fff;
+
+    }
+      #star_rating{
+          margin-left: 120px;
+      }
+
+    #star_rating a:nth-child(1){
+        background: url("https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/rating/img_poorrating.png")no-repeat left 4px;
+        font-size: 13px;
+        color: #969090;
+        padding-left: 12px;
+        text-decoration: none;
+        margin-right: 8px;
+        font-family: open sans;
+        cursor: pointer;
+        line-height: 1.8em;
+        text-align: left;
+    }
+
+    #star_rating a:nth-child(2){
+        background: url("https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/rating/img_averagerating.png") no-repeat left 4px;
+        font-size: 13px;
+        color: #969090;
+        padding-left: 22px;
+        text-decoration: none;
+        margin-right: 8px;
+        font-family: open sans ;
+        cursor: pointer;
+        line-height: 1.8em;
+        text-align: left;
+    }
+    #star_rating a:nth-child(3){
+        background: url("https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/rating/img_goodrating.png") no-repeat left 4px;
+
+        font-size: 13px;
+        color: #969090;
+        padding-left: 32px;
+        text-decoration: none;
+        margin-right: 8px;
+        font-family: open sans ;
+        cursor: pointer;
+        line-height: 1.8em;
+        text-align: left;
+    }
+
+    #star_rating a:nth-child(4){
+        background: url("https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/rating/img_verygoodrating.png") no-repeat left 4px;
+
+        font-size: 13px;
+        color: #969090;
+        padding-left: 42px;
+        text-decoration: none;
+        margin-right: 8px;
+        font-family: open sans ;
+        cursor: pointer;
+        line-height: 1.8em;
+        text-align: left;
+    }
+    #star_rating a:nth-child(5){
+        background: url("https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/rating/img_excellentrating.png") no-repeat left 4px;
+
+        font-size: 13px;
+        color: #969090;
+        padding-left: 52px;
+        text-decoration: none;
+        margin-right: 4px;
+        font-family: open sans ;
+        cursor: pointer;
+        line-height: 1.8em;
+        text-align: left;
+    }
+
+   #p span{
+       margin:5px 15px 5px 10px;
+   }
+     
+   #rating_rev a{
+    
+    background: url("https://martjackassests.azureedge.net/css/themes/mjt02012432/images/main/rating/img_ratingresult.png") no-repeat scroll left 3px;
+    float: right;
+    height: 20px;
+    width: 97px;
+    margin-right: 70%;
+   }
+
+   #rating_rev label{
+   margin:30px 0px 30px 30px;
+   padding: 10px;
+
+   }
+  .inp1{
+      width:60%;
+      line-height: 27px;
+      font-size: 12px;
+      font-weight: 400;
   }
+
+  .inp2{
+      width:60%;
+      color:rgb(102 ,102 ,102);
+      background-color: rgb(255 ,255,255);
+      font-size: 12px;
+      line-height: 40px;
+      font-weight: 400;
+      margin-left:150px ;
+  }
+   #rating_rev p{
+       margin-left: 150px;
+   }
+ 
 
 
   #sevenicon{
@@ -707,28 +829,58 @@
                 <span>FEATURES</span>
                 <SPan>DESCRIPTION</SPan>
            
-                <tr>
-                    <td>Specification</td>
-                </tr>
-                <tr>
-                    <td> Country of origin</td>
-                    <td>vietnam  </td>
-                </tr>
-                <tr>
-                    <td>Name of manufacturer </td>
-                    <td> <label>Babolat</label> </td>
-                </tr>
-                <tr>
-                    <td> <label>Name of Importer</label>  </td>
-                    <td> <label>Sports Square Pvt Ltd,Bhiwandi</label> </td>
-                </tr>
+             <table>
+                 <tr>
+                     <td class="td1">Specification</td>
+                     <td class="td2"></td>
+                 </tr>
+                 <tr>
+                     <td  class="td1">Country of origin</td>
+                     <td class="td2">vietnam</td>
+                 </tr>
+                 <tr>
+                     <td  class="td1">Name of Manufacturer</td>
+                     <td class="td2">Babolat</td>
+                 </tr>
+                 <tr>
+                     <td  class="td1">Name of Importer</td>
+                     <td class="td2">Sports Square Pvt Ltd,Bhiwandi</td>
+                 </tr>
+             </table>
                
-
-
-
         </div>
 
+         <div>WRITE A REVIEW</div>
+             <div id="p">
+           <span>Product Name</span>
+  <span>Babolat Shadow Team Mens Indoor Court Shoes</span>
+       </div>
+   <div id=star_rating>
+      <a href="#">Poor</a>
+      <a href="#">Average</a>
+      <a href="#">Good</a>
+      <a href="#">Very good</a>
+      <a href="#">Excellent</a>
+  </div>
 
+  <div id="rating_rev">
+      <ul>
+          <li>
+              <label for="">Review Title</label>
+              <input class="inp1" type="text" name="" id="">
+
+          </li>
+          <li>
+              <label>Your Rating</label>
+              <a href="#"></a>
+          </li>
+          <li>
+              <label >Your Message</label>
+              <input  class ="inp2"type="text" name="" id="">
+              <p>2000 Characters left</p>
+          </li>
+      </ul>
+  </div>
 
 
 
@@ -736,9 +888,10 @@
         </div>
      
 
-        <div id="may_also_like">
-        <h2>YOU MaY ALSO LIKE</h2>
-             
+
+
+
+
 
         </div>
 

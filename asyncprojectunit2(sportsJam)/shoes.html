@@ -133,7 +133,7 @@
    font-size: 12px;
    line-height: 30px;
    height: 30px;
-   background-color: palegreen;
+  
 }
 
 #bar a{
@@ -152,7 +152,7 @@
       width:100%;
        text-align: center;
       height: 50px;
-      background-color: aquamarine;
+     
   }
 
  .sel{
@@ -166,7 +166,7 @@
     
     width:92%;
     margin-left: 8%;
-    border: 2px solid red;
+   
     
     display: grid;
     gap:2%;
@@ -180,7 +180,8 @@
     cursor: pointer;
 }
 #shoescontainer>div:hover{
-    border: 1px solid black;
+    border: 1px solid rgb(124, 119, 119);
+    box-shadow: grey;
     
 }
 .ptext{
@@ -207,6 +208,7 @@
     width:100%;
     height: 50%;
 }
+
 
 .image3{
     margin-left: 70%;
@@ -410,12 +412,12 @@
     <div class="filter">
          <h2>found 9 product(s) in 6 Brand(S)</h2>
            
-         <select plaaceholder="select" class="sel" >
+         <select plaaceholder="select" class="sel" onselect="sort()" >
               <option>select</option>
-               <option><button onclick="sortLH()">Price low to high</button></option>
-             <option onclick="sortHL()">Price High to low</option>
-             <option onclick="sortDS()">Discount</option>
-             <option  onclick="sortP()">popularity</option>
+               <option id="LH" value="low to high">Price low to high</option>
+             <option >Price High to low</option>
+             <option >Discount</option>
+             <option>popularity</option>
          </select>
 
 
@@ -423,7 +425,8 @@
     </div>
 
     <div id="shoescontainer"></div>
-
+       
+      <button onclick="productdetail()" style="color:white;background-color: orangered;float: right;">View Details</button>
     
 
         
@@ -620,7 +623,7 @@ console.log(shoes)
 
     d.forEach(element => {
         
-        console.log(element.actual_price)
+       // console.log(element.actual_price)
 
         let eachshoe_div=document.createElement("div");
         let shoe_name=document.createElement("h4");
@@ -666,16 +669,17 @@ dis.setAttribute("class","ptext")
  show_shoes_onwebpage(shoes);
 
       var productshoe= localStorage.setItem("shoes" ,JSON.stringify(shoes))
+      function sort(){
       
-         
-      function sortLH(){
-          console.log("hello")
-      }
+     document.getElementById("LH").addEventListener("select",function(){
+         console.log("hello")
+     })
 
+    }
 
-
-
-
+    function productdetail(){
+        window.location.href="productdetail.html"
+    }
 
 
 

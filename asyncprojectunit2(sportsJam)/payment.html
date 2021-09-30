@@ -26,7 +26,7 @@
       margin-right: 15px;
       vertical-align: top;
   }
-  #billing h3{
+   h3{
       color: white;
       background-color: greenyellow;
       padding: 5px 10px;
@@ -49,7 +49,28 @@
       display: inline-block;
       vertical-align: top;
   }
+  input{
+      margin-left: 10px;
+      margin-bottom: 10px;
+  }
 
+  label{
+      font-size: 15px;
+      margin-left: 10px;
+
+  }
+  #cn{
+      width: 300px;
+      padding: 5px;
+
+  }
+   
+  button{
+      background-color: green;
+      color: white;
+      padding: 5px;
+      margin-left: 15px;
+  }
 
 
     </style>
@@ -77,12 +98,27 @@
          <div id="od"></div>
      </div>
 
+     <h3>payment Information</h3>
+     <div id="paymentinfo">
+
+       <label for="">Card Number</label><br>
+      <input type="number" name="" id="cn"><br>
+     <label for="">Expiry Date</label><br>
+    <input type="month" name="" id="ed"><br>
+          <label for="">CVV</label><br>
+<input type="password" name="" id="cvv">
+    
+
+     </div>
+   <h4>I agree with the privacy Policy by proceeding with this payment</h4>
+      
+   <p><strong id="ttext"></strong> (total amount payable)</p>
 
 
 
      <button onclick="payment()">MAKE PAYMENT</button>
 
-
+      <button onclick="paymentcancel()">Cancel</button>
 
 
 
@@ -99,6 +135,7 @@
     <script>
   var total=JSON.parse(localStorage.getItem("final price"))
   console.log(total)
+     document.getElementById("ttext").append(total)
     var inf=document.createElement("h2");
     inf.textContent="Order Details:"
     var divs=document.createElement("div");
@@ -109,13 +146,60 @@
  
       
   function payment(){
-      alert("Thanks For Purchasing With Us.");
+    var card=JSON.parse(localStorage.getItem("carddetail"))
+
+console.log(card)
+   
+  var incard=document.getElementById("cn").value;
+  var exp=document.getElementById("ed").value;
+  var cvv=document.getElementById("cvv").value;
+
+
+
+    card.forEach(element => {
+        
+     
+        if(incard==element.cardno && cvv==element.cvv){
+  
+ 
+   alert("Thanks For Purchasing With Us.");
+       window.location.href="home.html"
+
+
+
+}
+ else{
+     alert("invalid credential")
+}
+ 
+
+    });
+ 
+    
+  }
+
+  function paymentcancel(){
       window.location.href="home.html"
   }
 
+  var carddetail=[
+      {
+          cardno:1234567890123456,
+          expiry:"October ,2022",
+  cvv:456,
+      }
+  ]
 
+ 
+   localStorage.setItem("carddetail",JSON.stringify(carddetail))
 
+    
 
+    document.getElementById("name").value="Roushan kumar"
+  document.getElementById("email").value="roushankumar6338@gmail.com",
+   document.getElementById("mob").value=9876543210;
+   document.getElementById("Country").value="INDIA";
+  
 
 
 
