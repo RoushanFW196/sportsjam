@@ -760,12 +760,12 @@ function deletes(element){
 
        var paybtn=document.createElement("input")
        paybtn.type="submit";
-      paybtn.onclick=payment;
+      paybtn.onclick=signin;
         paybtn.value="PROCEED TO PAY";
         document.getElementById("pay").append(a,paybtn);
 
-  function payment(){
-      window.location.href="payment.html"
+  function signin(){
+      window.location.href="signin.html"
   }
 
       console.log(total)
