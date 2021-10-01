@@ -125,6 +125,14 @@
     
     padding:10px  15px;
 }
+
+
+#accessory span:hover{
+     color: white;
+     background: #000000;
+ }
+
+
 #bar{
    color:#000000;
    text-decoration-line: none;
@@ -401,7 +409,7 @@
       <span>Brands</span>
     </div>
     <div id="bar">
-        <a href="#"><span>Home></span></a>
+        <a href="home.html"><span>Home></span></a>
         <a href="#"><span>Buy></span></a>
          <a href="#"><span>SPORTS></span></a>
          <a href="#"><span>BADMINTON></span></a>
@@ -412,17 +420,17 @@
     <div class="filter">
          <h2>found 9 product(s) in 6 Brand(S)</h2>
            
-         <select plaaceholder="select" class="sel" onselect="sort()" >
+         <button onclick="sortLH()">low to high</button>
+         <select>
               <option>select</option>
-               <option id="LH" value="low to high">Price low to high</option>
+             
              <option >Price High to low</option>
              <option >Discount</option>
              <option>popularity</option>
          </select>
 
-
-
     </div>
+
 
     <div id="shoescontainer"></div>
        
@@ -513,6 +521,7 @@
 
 
     <script>
+
 let shoes=[
 
 {
@@ -617,10 +626,11 @@ let shoes=[
 ]
 
 
-console.log(shoes)
+//console.log(shoes)
 
  function show_shoes_onwebpage(d){
 
+  shoescontainer.innerHTML=null
     d.forEach(element => {
         
        // console.log(element.actual_price)
@@ -669,17 +679,35 @@ dis.setAttribute("class","ptext")
  show_shoes_onwebpage(shoes);
 
       var productshoe= localStorage.setItem("shoes" ,JSON.stringify(shoes))
-      function sort(){
+     productshoear=JSON.parse(localStorage.getItem("shoes"))
+     // console.log(productshoear)
       
-     document.getElementById("LH").addEventListener("select",function(){
-         console.log("hello")
-     })
+      function sortLH(){
 
-    }
+          let shoear=shoes.sort(function(a,b){
+              return a.real_price-b.real_price
+          })
+         // console.log("hello")
+   console.log(shoear)
+         show_shoes_onwebpage(shoear)
+      }
+   
+
+
+
+
 
     function productdetail(){
         window.location.href="productdetail.html"
     }
+
+
+
+
+
+
+
+
 
 
 

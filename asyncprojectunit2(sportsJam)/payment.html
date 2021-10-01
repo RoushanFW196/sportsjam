@@ -10,7 +10,7 @@
 
 .paypage{
     width: 800px;
-    height: 700px;
+    height: 800px;
   background-color: rgb(255 ,255 ,255);
     margin:auto;
     border: 1px solid black;
@@ -21,7 +21,7 @@
   #billing{
       width:550px;
       height: 300px;
-      border:1px solid red;
+     
       display: inline-block;
       margin-right: 15px;
       vertical-align: top;
@@ -45,7 +45,7 @@
   #od{
       width: 200px;
       height: 200px;
-      border: 1px solid green;
+    
       display: inline-block;
       vertical-align: top;
   }
@@ -194,11 +194,21 @@ console.log(card)
    localStorage.setItem("carddetail",JSON.stringify(carddetail))
 
     
+   var userid=JSON.parse(localStorage.getItem("user"));
+   console.log(userid)
 
-    document.getElementById("name").value="Roushan kumar"
-  document.getElementById("email").value="roushankumar6338@gmail.com",
-   document.getElementById("mob").value=9876543210;
+   userid.forEach(function(el){
+    document.getElementById("name").value=el.name;
+  document.getElementById("email").value=el.email;
+   document.getElementById("mob").value=el.mobile;
    document.getElementById("Country").value="INDIA";
+  
+
+   })
+//     document.getElementById("name").value=userid.name;
+//   document.getElementById("email").value=userid.email;
+//    document.getElementById("mob").value=userid.email;
+//    document.getElementById("Country").value="INDIA";
   
 
 
