@@ -787,7 +787,7 @@ var td2=document.createElement("td");
        var amount_gst= total*0.18;
 
       console.log(amount_gst)
-      td2.textContent=amount_gst;
+      td2.textContent=amount_gst.toFixed(2);
 
       tr2.append(td1,td2);
       
@@ -804,7 +804,7 @@ var td2=document.createElement("td");
       document.getElementById('summary').append(sumry ,tr1,tr2,tr3)
 
      
-        var total_cart_price=amount_after_gst;
+        var total_cart_price=amount_after_gst.toFixed(2);
         localStorage.setItem("final price",JSON.stringify(total_cart_price))
 
 
